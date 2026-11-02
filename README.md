@@ -1,11 +1,11 @@
-# quantize_jd390
+# attention_kernel_bandwidth_segmenter
 
 **把量化与稀疏化研究员·注意力核��的访存瓶颈切成可核查的片段并标出关键位置。**
 
-`quantize_jd390` —— 把输入按语义边界切成独立单元，逐单元核对量化与稀疏化研究员·注意力核��的访存瓶颈相关的特征并标出命中位置
+`attention_kernel_bandwidth_segmenter` —— 把输入按语义边界切成独立单元，逐单元核对量化与稀疏化研究员·注意力核��的访存瓶颈相关的特征并标出命中位置
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`quantize_jd390.py` 拷走就能用
+- 单文件，`attention_kernel_bandwidth_segmenter.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install bentoniggy-quantize_jd390
+pip install bentoniggy-attention_kernel_bandwidth_segmenter
 ```
 
 装完直接用命令名调用：
 
 ```bash
-quantize_jd390 --help
+attention_kernel_bandwidth_segmenter --help
 ```
 
-也可以不用安装，直接把 `quantize_jd390.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `attention_kernel_bandwidth_segmenter.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ quantize_jd390 --help
 ## 用法
 
 ```bash
-python quantize_jd390.py --file input.txt
-python quantize_jd390.py --text "示例内容"
-python quantize_jd390.py --file input.txt --json
+python attention_kernel_bandwidth_segmenter.py --file input.txt
+python attention_kernel_bandwidth_segmenter.py --text "示例内容"
+python attention_kernel_bandwidth_segmenter.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python quantize_jd390.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_quantize_jd390.py
+python test_attention_kernel_bandwidth_segmenter.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_quantize_jd390.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/bentoniggy/quantize_jd390>
+- GitHub 仓库：<https://github.com/bentoniggy/attention_kernel_bandwidth_segmenter>
 
 ---
 
@@ -79,7 +79,7 @@ python test_quantize_jd390.py
 bentoniggy 做量化与稀疏化研究员·注意力核��的访存瓶颈相关的问题，方向对标英伟达的实习量化与稀疏化研究员岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://bentoniggy.github.io>
-- 仓库：<https://github.com/bentoniggy/quantize_jd390>
+- 仓库：<https://github.com/bentoniggy/attention_kernel_bandwidth_segmenter>
 
 ## 许可
 

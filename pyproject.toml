@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "bentoniggy-quantize_jd390"
+name = "bentoniggy-attention_kernel_bandwidth_segmenter"
 version = "0.1.0"
 description = "把输入按语义边界切成独立单元，逐单元核对量化与稀疏化研究员·注意力核��的访存瓶颈相关的特征并标出命中位置"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://bentoniggy.github.io"
-Repository = "https://github.com/bentoniggy/quantize_jd390"
-Issues = "https://github.com/bentoniggy/quantize_jd390/issues"
+Repository = "https://github.com/bentoniggy/attention_kernel_bandwidth_segmenter"
+Issues = "https://github.com/bentoniggy/attention_kernel_bandwidth_segmenter/issues"
 
 [project.scripts]
-quantize_jd390 = "quantize_jd390:main"
+attention_kernel_bandwidth_segmenter = "attention_kernel_bandwidth_segmenter:main"
 
 [tool.setuptools]
-py-modules = ["quantize_jd390"]
+py-modules = ["attention_kernel_bandwidth_segmenter"]
